@@ -13,56 +13,6 @@ class App
     @rental = []
   end
 
-  def run
-    puts library_menu
-
-    input = gets.chomp
-    if input <= '6'
-      options(input)
-    elsif input == '7'
-      puts 'Thanks for using our app!'
-    else
-      puts 'Please select a number from 1 - 7'
-    end
-  end
-
-  def library_menu
-    puts ''
-    puts ''
-    puts 'Welcome to the School Library App!'
-    puts ''
-    puts ''
-    puts 'Please choose one of these options by entering a number'
-    puts ''
-    puts ''
-    puts '1- List all available books'
-    puts '2- List all people'
-    puts '3- Create a person'
-    puts '4- Create a book'
-    puts '5- Create a rental'
-    puts '6- List all rentals for a given person(ID)'
-    puts '7- Exit'
-  end
-
-  def options(input)
-    case input
-    when '1'
-      list_books
-    when '2'
-      list_people
-    when '3'
-      create_person
-    when '4'
-      create_book
-    when '5'
-      create_rental
-    when '6'
-      list_rentals
-    else
-      'Enter a number between from 1 to 7'
-    end
-  end
-
   def list_books
     if @book.empty?
       puts 'No books available'
@@ -148,7 +98,6 @@ class App
     print 'Press Enter to go back to menu'
     gets.chomp
     puts ''
-    run
   end
 
   private
