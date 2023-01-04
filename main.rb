@@ -1,7 +1,8 @@
 #!/usr/bin/env ruby
 require_relative './app'
 
-file.chomod(0o755)
+file = 'main.rb'
+File.chmod(0o755, file)
 
 def main
   app = App.new
