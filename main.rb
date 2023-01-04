@@ -2,6 +2,7 @@
 require_relative './app'
 
 file = 'main.rb'
+
 File.chmod(0o755, file)
 
 def main
