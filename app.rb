@@ -3,7 +3,6 @@ require_relative './teacher'
 require_relative './rental'
 require_relative './book'
 
-# rubocop:disable Metrics/ClassLength
 class App
   attr_reader :book, :people, :rental
 
