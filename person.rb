@@ -13,7 +13,7 @@ class Person < Nameable
   end
 
   attr_accessor :name, :age, :rentals
-  attr_reader :id,
+  attr_reader :id
 
   private
 
