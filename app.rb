@@ -127,4 +127,3 @@ class App
     show_menu
   end
 end
-# rubocop:enable Metrics/ClassLength
