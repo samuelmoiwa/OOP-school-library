@@ -1,11 +1,54 @@
-require_relative './app'
+require './app'
 
-file = 'main.rb'
-File.chmod(0o755, file)
+class App
+  def self.menu
+    puts 'Welcome to the School Library App!'
+    puts "\n"
+    puts 'Please choose an option by entering a number: '
 
-def main
-  app = App.new
-  app.run
+    @list = {
+      '1' => 'List all books',
+      '2' => 'List all people',
+      '3' => 'Create a person',
+      '4' => 'Create a book',
+      '5' => 'Create a rental',
+      '6' => 'List all rentals for a given person id',
+      '7' => 'Exit'
+    }
+
+    @list.each do |index, string|
+      puts "#{index} - #{string}"
+    end
+
+    Integer(gets.chomp)
+  end
+
+  run = App.new
+  loop do
+    case menu
+    when 1
+      run.list_books
+    when 2
+      run.list_people
+    when 3
+      run.create_person
+    when 4
+      run.create_book
+    when 5
+      run.create_rental
+    when 6
+      run.list_rentals
+    when 7
+      puts 'Thank you and have a nice day!'
+      exit
+    else
+      puts 'Please choose a number between 1 and 7.'
+    end
+  end
 end
 
-puts main
+def main
+  Main.new
+end
+
+main
