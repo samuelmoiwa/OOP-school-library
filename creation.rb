@@ -1,4 +1,5 @@
 require_relative './menu'
+require_relative './data'
 
 class Creation
   include ShowMenu
@@ -29,6 +30,7 @@ class Creation
     author = gets.chomp
     book = Book.new(title, author)
     @book.push(book)
+    save_book(title, author)
     puts 'Book successfully created!'
     show_menu
   end
@@ -47,6 +49,7 @@ class Creation
     rental = Rental.new(date, book, person)
     puts rental
     @rental.push(rental)
+    save_rental(date, @people[person_index], @book[index])
     puts 'Rental created successfully'
     show_menu
   end
@@ -62,6 +65,7 @@ class Creation
     permission = gets.chomp
     new_student = Student.new(age, permission, name)
     @people.push(new_student)
+    save_student(name, age, parent_permission: permission)
     puts 'Student created successfully'
     show_menu
   end
@@ -75,6 +79,7 @@ class Creation
     specialization = gets.chomp
     teacher = Teacher.new(age, specialization, name)
     @people.push(teacher)
+    save_teacher(name, age, specialization)
     puts 'Teacher created successfullly'
     show_menu
   end
