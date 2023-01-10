@@ -16,4 +16,12 @@ class App
     @people = []
     @rental = []
   end
+  
+  def load_data
+    load_person
+    puts
+    load_books
+    puts
+    load_rentals
+  end
 end
