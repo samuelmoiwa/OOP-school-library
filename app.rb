@@ -16,7 +16,7 @@ class App
     @people = []
     @rental = []
   end
-  
+
   def load_data
     load_person
     puts
