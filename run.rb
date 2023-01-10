@@ -15,6 +15,5 @@ module Run
     else
       puts 'Please select a number from 1 - 7'
     end
-
   end
 end
