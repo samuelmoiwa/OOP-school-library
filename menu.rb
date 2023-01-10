@@ -6,6 +6,6 @@ module ShowMenu
     print 'Press Enter to go back to menu'
     gets.chomp
     puts ''
-    run 
+    run
   end
 end
