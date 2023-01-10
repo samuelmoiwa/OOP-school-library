@@ -10,11 +10,6 @@ class Listings
     @rental = rental
   end
 
-  def load_rentalss
-    puts
-    load_rentals
-  end
-
   def list_books
     if @book.empty?
       puts 'No books available'
