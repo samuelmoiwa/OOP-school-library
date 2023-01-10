@@ -135,6 +135,11 @@ Example command:
 - Twitter: [@twitterhandle](https://twitter.com/samuelmoiwa)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samuel-moiwa-726340142/)
 
+👤 **Vitalis Mutwiri*
+
+- GitHub: [@svitalis123](https://github.com/svitalis123)
+- Twitter: [@WilsonVitalis](https://twitter.com/WilsonVitalis)
+- LinkedIn: [vitalismutwiri](https://www.linkedin.com/in/vitalismutwiri/)
 
 <p align="right"><a href="#readme-top">back to top</a></p>
 
