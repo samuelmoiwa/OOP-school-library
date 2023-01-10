@@ -4,6 +4,7 @@ require_relative './rental'
 require_relative './book'
 require_relative './menu'
 require_relative './creation'
+require_relative './data'
 require_relative 'listings'
 
 class App
@@ -15,4 +16,5 @@ class App
     @people = []
     @rental = []
   end
+
 end

@@ -16,7 +16,7 @@ module Options
     when '5'
       @rental.push(creation.create_rental)
     when '6'
-      listings.list_rentals
+      listings.load_rentalss
     else
       'Enter a number between from 1 to 7'
     end
