@@ -1,4 +1,6 @@
 require_relative './menu'
+require_relative './data'
+require_relative './creation'
 
 class Listings
   include ShowMenu
@@ -6,6 +8,11 @@ class Listings
     @book = book
     @people = people
     @rental = rental
+  end
+
+  def load_rentalss
+    puts
+    load_rentals
   end
 
   def list_books
